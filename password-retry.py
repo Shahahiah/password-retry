@@ -1,6 +1,6 @@
 password = 'a123456'
 i = 3 # number of chance left
-while True:
+while i > 0:
 	pwd = input('Please enter password: ')
 	if pwd == password:
 		print('Login Success!')
@@ -8,6 +8,3 @@ while True:
 	else:
 		i = i - 1
 		print('Wrong password!', i , 'more chance')
-		if i == 0:
-			break
-			
